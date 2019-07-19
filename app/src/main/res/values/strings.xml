@@ -1,3 +1,42 @@
 <resources>
     <string name="app_name">DeepL</string>
+
+    <string name="translate">Перевод</string>
+    <string name="upload_document">Загрузить документ</string>
+    <string name="english">Английский</string>
+    <string name="unknown">Определить автоматически</string>
+    <string name="german">Немецкий</string>
+    <string name="french">Французский</string>
+    <string name="spanish">Испанский</string>
+    <string name="portuguese">Португальский</string>
+    <string name="italian">Итальянский</string>
+    <string name="dutch">Нидерландский</string>
+    <string name="polish">Польский</string>
+    <string name="russian">Русский</string>
+
+    <string-array name="input_languages">
+        <item>Определить язык</item>
+        <item>Английский</item>
+        <item>Немецкий</item>
+        <item>Французский</item>
+        <item>Испанский</item>
+        <item>Португальский</item>
+        <item>Итальянский</item>
+        <item>Нидерландский</item>
+        <item>Польский</item>
+        <item>Русский</item>
+    </string-array>
+
+    <string-array name="output_languages">
+        <item>Английский</item>
+        <item>Немецкий</item>
+        <item>Французский</item>
+        <item>Испанский</item>
+        <item>Португальский</item>
+        <item>Итальянский</item>
+        <item>Нидерландский</item>
+        <item>Польский</item>
+        <item>Русский</item>
+    </string-array>
+
 </resources>

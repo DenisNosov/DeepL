@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+        android:color="?android:attr/colorControlHighlight">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/default_spacing"/>
+            <stroke android:width="5dp"
+                    android:color="@color/colorBackground"/>
+        </shape>
+    </item>
+    <item android:id="@android:id/mask">
+        <inset android:insetBottom="5dp"
+               android:insetLeft="5dp"
+               android:insetRight="5dp"
+               android:insetTop="5dp">
+            <shape android:shape="rectangle">
+                <corners android:radius="12dp"/>
+                <solid android:color="@android:color/white"/>
+            </shape>
+        </inset>
+    </item>
+    <item android:drawable="@drawable/background_translate_button"/>
+</ripple>
