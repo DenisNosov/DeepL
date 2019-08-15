@@ -1,15 +1,17 @@
 package dev.denisnosoff.deepl.data.network
 
-import retrofit2.http.GET
-import retrofit2.http.Query
+import dev.denisnosoff.deepl.data.network.models.translation.TranslationResponse
+import io.reactivex.Single
+import retrofit2.http.POST
+import retrofit2.http.Part
 
 interface DeepLApi {
 
-    @GET("translate")
+    @POST("translate")
     fun translateText(
-        @Query("text") text: String,
-        @Query("target_lang") targetLang: String,
-        @Query("source_lang") sourceLanguage: String? = null
-    )
+        @Part("text") text: String,
+        @Part("target_lang") targetLang: String,
+        @Part("source_lang") sourceLanguage: String?
+    ) : Single<TranslationResponse>
 
 }

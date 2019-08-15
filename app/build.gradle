@@ -18,8 +18,12 @@ android {
     }
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField("String", "BASE_URL", serverUrl)
+        }
+        debug {
+            minifyEnabled false
             buildConfigField("String", "BASE_URL", serverUrl)
         }
     }
@@ -48,6 +52,9 @@ dependencies {
     implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
     implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
     implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion"
+
+    //Network logging
+    implementation "com.squareup.okhttp3:logging-interceptor:$loggingInterceptorVersion"
 
     //DI
     implementation "org.koin:koin-core:$koinVersion"

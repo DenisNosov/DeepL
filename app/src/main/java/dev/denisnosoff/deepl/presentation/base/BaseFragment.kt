@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import moxy.MvpAppCompatFragment
 
 abstract class BaseFragment : MvpAppCompatFragment(), BaseView {
@@ -18,6 +19,14 @@ abstract class BaseFragment : MvpAppCompatFragment(), BaseView {
         super.onViewCreated(view, savedInstanceState)
 
         initViews()
+    }
+
+    override fun showError(stringId: Int) {
+        Toast.makeText(context, stringId, Toast.LENGTH_SHORT).show()
+    }
+
+    override fun showError(text: String) {
+        Toast.makeText(context, text, Toast.LENGTH_SHORT).show()
     }
 
     abstract fun initViews()

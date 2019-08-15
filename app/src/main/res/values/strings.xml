@@ -4,7 +4,7 @@
     <string name="translate">Перевод</string>
     <string name="upload_document">Загрузить документ</string>
     <string name="english">Английский</string>
-    <string name="unknown">Определить автоматически</string>
+    <string name="unknown">Определить язык</string>
     <string name="german">Немецкий</string>
     <string name="french">Французский</string>
     <string name="spanish">Испанский</string>
@@ -13,6 +13,9 @@
     <string name="dutch">Нидерландский</string>
     <string name="polish">Польский</string>
     <string name="russian">Русский</string>
+    <string name="error_while_translating">Произошла ошибка при переводе. Попробуйте позже.</string>
+    <string name="translation_clipboard_label">Скопированный текст</string>
+    <string name="text_copied_label">Текст скопирован в буфер обмена</string>
 
     <string-array name="input_languages">
         <item>Определить язык</item>

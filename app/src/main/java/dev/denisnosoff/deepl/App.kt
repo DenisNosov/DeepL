@@ -1,6 +1,10 @@
 package dev.denisnosoff.deepl
 
 import android.app.Application
+import dev.denisnosoff.deepl.di.appModule
+import dev.denisnosoff.deepl.di.languageModule
+import dev.denisnosoff.deepl.di.networkModule
+import dev.denisnosoff.deepl.di.translateModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
@@ -13,7 +17,7 @@ class App : Application() {
         startKoin {
             androidLogger()
             androidContext(applicationContext)
-            modules(listOf())
+            modules(listOf(appModule, languageModule, networkModule, translateModule))
         }
     }
 
